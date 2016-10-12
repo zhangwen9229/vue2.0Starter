@@ -1,0 +1,13 @@
+{
+  "name": "fishery",
+  "description": "A Vue.js project",
+  "main": "",
+  "authors": [
+    "zhangwen9229 <378253487@qq.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "devDependencies": {
+    "lib.flexible": "^0.3.2"
+  }
+}
