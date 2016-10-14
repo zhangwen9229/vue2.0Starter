@@ -1,18 +1,83 @@
-*{
-	box-sizing: border-box;
+* {
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
 }
-html,body{
-	padding: 0;
-	margin: 0;
-	overflow: hidden;
+
+[data-dpr="1"] * {
+    border-width: 1px;
 }
-.apppage{
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	background: #f00;
-	display: flex;
-	flex-direction: column;
-	/*transform: translate3d(100%,0,0);*/
-	font-size: 0.6rem;
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.apppage {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #f00;
+    display: flex;
+    flex-direction: column;
+    /*transform: translate3d(100%,0,0);*/
+    font-size: 0.6rem;
+}
+
+.appheader {
+    height: 1.2rem;
+    flex: 0 0 1.2rem;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0 0.4rem;
+}
+
+.appheader .info {
+    text-align: center;
+    flex: 1;
+    margin-left: 0.4rem;
+    margin-right: 0.8rem;
+    overflow: hidden;
+    display: block;
+    /*overflow: auto;*/
+}
+
+.appheader .info .inner {
+    white-space: nowrap;
+    
+    /*overflow: hidden;*/
+}
+
+.inner h1 {
+    white-space: nowrap;
+    display: inline-block;
+    /*height: 0.6rem;*/
+    /*line-height: 0.6rem;*/
+}
+
+.appback {
+    width: 0.4rem;
+    height: 0.4rem;
+    border-left: solid;
+    border-top: solid;
+    border-width: 0.0133rem;
+    display: inline-block;
+    transform: rotate(-45deg);
+}
+
+.appcontent {
+    flex: 1;
+    overflow-y: auto;
 }

@@ -16,6 +16,7 @@ import * as getters from './getters';
 // Modules
 import account from './modules/account';
 import auth from './modules/auth';
+import common from './modules/common';
 
 Vue.use(Vuex);
 
@@ -36,6 +37,7 @@ export default new Vuex.Store({
    * Assign the modules to the store
    */
   modules: {
+    common,
     account,
     auth,
   },

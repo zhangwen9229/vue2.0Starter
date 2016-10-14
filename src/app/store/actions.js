@@ -24,3 +24,7 @@ export const logout = ({ commit }) => {
 export const checkAuthentication = ({ commit }) => {
   commit(types.CHECK_AUTHENTICATION);
 };
+
+export const roll_title = ({ commit },payload) => {
+  commit(types.ROLL_TITLE, payload);
+};
