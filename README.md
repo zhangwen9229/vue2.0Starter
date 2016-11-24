@@ -1,4 +1,4 @@
-# fishery
+# vue2.0Starter
 
 > A Vue.js project
 
